@@ -1,3 +1,5 @@
+import re
+
 def a():
     f = open("input01.txt", "r")
     sum = 0
@@ -13,7 +15,7 @@ def a():
             if c.isnumeric():
                 num += c
                 break
-        
+
         sum += int(num)
     
     print(sum)
@@ -22,7 +24,14 @@ def a():
 a()
 
 def b():
-    numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
-    print(1)
+    numbers = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9}
+    f = open("input01.txt", "r")
+    sum = 0
+    for line in f:
+        num = ""
+        
+        print(num)
+        sum += int(num)
+    print(sum)
     
 b()
