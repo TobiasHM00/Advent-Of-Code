@@ -27,6 +27,7 @@ class tredje {
             Matcher matcher = p.matcher(line);
             Matcher matcher2 = p2.matcher(line);
 
+            //del1
             while (matcher.find()) {
                 int x = Integer.parseInt(matcher.group(1));
                 int y = Integer.parseInt(matcher.group(2));
@@ -34,6 +35,7 @@ class tredje {
                 sumDel1 += x*y;
             }
 
+            //del2
             while (matcher2.find()) {
                 if (matcher2.group(1) != null && matcher2.group(2) != null) {
                     int x = Integer.parseInt(matcher2.group(1));
